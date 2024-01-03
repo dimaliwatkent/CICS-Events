@@ -5,7 +5,7 @@
 1. Open Terminal
 2. `git clone https://github.com/dimaliwatkent/cics-events.git`
 3. `cd cics-events`
-4. 'npm install'
+4. `npm install`
 
 ## Run
 
@@ -13,4 +13,4 @@
 
 ## Live Site
 
-- [Firebase Live Site]()
+- [Firebase Live Site](https://cics-events.web.app/)
