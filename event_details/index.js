@@ -10,10 +10,15 @@ console.log(userEvent.eventName);
 if (userEvent) {
   // Create the event details HTML
   const eventDetailsHtml = `
-   <h2>${userEvent.eventName}</h2>
-   <p>${userEvent.eventDescription}</p>
-   <img src="${userEvent.image}" alt="${userEvent.eventName}">
-   <!-- ...and so on for the rest of the event data -->
+    <img src="${userEvent.image}" alt="${userEvent.eventName}">
+    <h2>Title: ${userEvent.eventName}</h2>
+    <p>Description: ${userEvent.eventDescription}</p>
+    <p>Date: ${userEvent.eventDate}</p>
+    <p>Location: ${userEvent.location}</p>
+    <p>Participants: ${userEvent.participants}</p>
+    <p>Organizers: ${userEvent.organizers}</p>
+    <p>Registration Deadline: ${userEvent.registrationDeadline}</p>
+    <p>State: ${userEvent.state}</p>
  `;
 
   // Insert the event details HTML into the page
