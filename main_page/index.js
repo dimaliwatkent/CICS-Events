@@ -1,3 +1,5 @@
+import "./style.css";
+
 const allEventsContainer = document.getElementById("clientEvents");
 
 // Load existing events from local storage
@@ -11,6 +13,7 @@ function loadAllEvents() {
   // Loop through all events and add them to the page
   events.forEach(function (event, index) {
     const eventElement = document.createElement("div");
+    eventElement.classList.add("clientEventsCard");
     eventElement.innerHTML = `
   <h2>${event.eventName}</h2>
   <p>${event.eventDescription}</p>

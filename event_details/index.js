@@ -1,3 +1,4 @@
+import "./styles.css";
 // Parse the URL to get the event index
 const urlParams = new URLSearchParams(window.location.search);
 const eventIndex = parseInt(urlParams.get("eventIndex"));
@@ -10,6 +11,7 @@ console.log(userEvent.eventName);
 if (userEvent) {
   // Create the event details HTML
   const eventDetailsHtml = `
+    <div class="fullEventDetails">
     <img src="${userEvent.image}" alt="${userEvent.eventName}">
     <h2>Title: ${userEvent.eventName}</h2>
     <p>Description: ${userEvent.eventDescription}</p>
@@ -19,6 +21,7 @@ if (userEvent) {
     <p>Organizers: ${userEvent.organizers}</p>
     <p>Registration Deadline: ${userEvent.registrationDeadline}</p>
     <p>State: ${userEvent.state}</p>
+    </div>
  `;
 
   // Insert the event details HTML into the page

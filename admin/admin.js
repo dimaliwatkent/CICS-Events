@@ -1,3 +1,5 @@
+import "./styles.css";
+
 const dialog = document.querySelector("#addEvent");
 const showDialogButton = document.querySelector("#addEventBtn");
 const cancelButton = document.querySelector("#cancelButton");
@@ -77,7 +79,7 @@ function loadAllEvents() {
   // Loop through all events and add them to the page
   events.forEach(function (event, index) {
     const eventElement = document.createElement("div");
-    eventElement.classList.add("yourClassName");
+    eventElement.classList.add("adminEventCard");
     eventElement.innerHTML = `
     <img src="${event.image}" alt="${event.eventName}">
     <h2>Title: ${event.eventName}</h2>
